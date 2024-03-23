@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+//하노이탑 프로젝트
+
+void hanoi(int num,char start,char mid,char finish);
+
+int main(void) {
+	char a = 'A', b = 'B', c = 'C';
+	int num = 3;
+
+	hanoi(num, a, b, c);
+
+
+	return 0;
+}
+
+void hanoi(int num,char start, char mid, char finish) {
+	if (num == 1) {
+		printf("%c에서 %c로 %d이동\n", start, finish,num);
+	}
+
+	else {
+		hanoi(num - 1, start, finish, mid);
+		printf("%c에서 %c로 %d 이동\n", start, finish, num);
+		hanoi(num - 1, mid, start, finish);
+	}
+}
