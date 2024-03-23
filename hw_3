@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(void) {
+	int val = 1;
+	int myun = 0, haeng = 0, yeal = 0;
+	int arr[2][3][4] = {" "};
+
+	for (myun = 0; myun <= 1; myun++) {
+		for (haeng = 0; haeng <= 2; haeng++) {
+			for (yeal = 0; yeal <= 3; yeal++) {
+				arr[myun][haeng][yeal] = val;
+				val++;
+
+			}
+
+		}
+	}
+
+	for (myun = 0; myun <= 1; myun++) {
+		for (haeng = 0; haeng <= 2; haeng++) {
+			for (yeal = 0; yeal <= 3; yeal++) {
+				printf("arr[%d][%d][%d]=%d\n",myun,haeng,yeal, arr[myun][haeng][yeal]);
+				
+
+			}
+
+		}
+	}
+	return 0;
+}
