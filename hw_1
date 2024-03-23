@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+	char* juso_1[4] = { "Korea","Seoul","Mapo","152번지 2/3"};
+	char* juso_2[4] = { {"Korea"},{"Seoul"},{"Jongno"},{"152번지 2/3"} };
+
+	printf("%s\n%s\n%s\n%s\n", (juso_1[0]), (juso_1[1]), (juso_1[2]), (juso_1[3]));
+	printf("\n");
+	printf("\n");
+	printf("%s\n%s\n%s\n%s\n", (juso_2[0]), (juso_2[1]), (juso_2[2]), (juso_2[3]));
+	printf("\n");
+
+
+
+	return 0;
+}
